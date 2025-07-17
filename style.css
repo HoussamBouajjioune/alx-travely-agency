@@ -32,10 +32,12 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.6rem; /* space between SVG and text */
+    gap: 0.6rem;
+    /* space between SVG and text */
     font-size: 1.4rem;
     font-weight: 700;
-    color: #fff; /* assuming header background is blue */
+    color: #fff;
+    /* assuming header background is blue */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -43,7 +45,8 @@ header {
 .logo svg {
     width: 32px;
     height: 32px;
-    background: #fff; /* white circle for contrast */
+    background: #fff;
+    /* white circle for contrast */
     border-radius: 50%;
     padding: 6px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -76,7 +79,7 @@ nav {
 }
 
 .nav-menu li a:hover {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* MAIN CONTAINER */
@@ -122,13 +125,17 @@ footer {
 
 /* Responsive */
 @media (max-width: 600px) {
-    header, footer {
+
+    header,
+    footer {
         padding: 0.7rem 1rem;
     }
+
     .nav-menu {
         gap: 1rem;
         font-size: 0.95rem;
     }
+
     .container {
         padding: 1rem;
         min-width: unset;
@@ -154,7 +161,7 @@ footer {
 
 .home-content {
     margin-left: 4vw;
-    background: rgba(255,255,255,0.64);
+    background: rgba(255, 255, 255, 0.64);
     padding: 2rem 2.5rem;
     border-radius: 26px;
     max-width: 500px;
@@ -199,15 +206,18 @@ footer {
         border-radius: 14px;
         min-height: 350px;
     }
+
     .home-content {
         margin-left: 2vw;
         padding: 1.2rem 1.2rem;
         max-width: 90vw;
     }
+
     .home-content h1 {
         font-size: 2rem;
         margin-bottom: 1rem;
     }
+
     .primary-btn {
         padding: 0.6rem 1.2rem;
         font-size: 1rem;
@@ -330,6 +340,7 @@ footer {
     .traject-cards {
         gap: 1rem;
     }
+
     .traject-card {
         width: 90vw;
         max-width: 350px;
@@ -337,9 +348,12 @@ footer {
 }
 
 @media (max-width: 700px) {
-    .traject-section h2, .traject-subtitle {
+
+    .traject-section h2,
+    .traject-subtitle {
         margin-left: 0.7rem;
     }
+
     .traject-cards {
         flex-direction: column;
         align-items: center;
@@ -502,6 +516,7 @@ footer {
     .above-features {
         gap: 1.3rem;
     }
+
     .above-feature {
         width: 90vw;
         max-width: 320px;
@@ -509,12 +524,14 @@ footer {
 }
 
 @media (max-width: 700px) {
+
     .above-section h2,
     .above-subtitle {
         margin-left: 0;
         margin-right: 0;
         font-size: 1.3rem;
     }
+
     .above-features {
         flex-direction: column;
         align-items: center;
@@ -653,6 +670,7 @@ footer {
         align-items: flex-start;
         padding: 0 1rem;
     }
+
     .info-col {
         width: 100%;
         margin-bottom: 1.5rem;
@@ -718,9 +736,99 @@ footer {
         align-items: center;
         gap: 1.2rem;
     }
+
     .stat-card {
         width: 90vw;
         min-width: 200px;
         max-width: 98vw;
+    }
+}
+
+/* --- Travel Detail Section --- */
+.travel-detail-section {
+    width: 100%;
+    /* max-width: 950px; */
+    margin: 3rem auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 2px 24px rgba(52, 152, 219, 0.12);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    display: flex;
+    align-items: flex-start;
+    /* or center */
+}
+
+.travel-detail-image img {
+
+    width: 100%;
+    margin-left: 20px;
+    /* max-height: 370px; */
+    object-fit: cover;
+    border-top-left-radius: 24px;
+    border-radius: 24px;
+    border-top-right-radius: 24px;
+    display: block;
+}
+
+.travel-detail-content {
+    width: 100%;
+    padding: 2.2rem 2.3rem 2.3rem 2.3rem;
+    text-align: left;
+}
+
+.travel-detail-libelle {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 0.7rem;
+    color: #222;
+}
+
+.travel-detail-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1.1rem;
+}
+
+.rating-value {
+    background: #3498db;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 14px;
+    padding: 0.25rem 0.85rem;
+}
+
+.star {
+    color: #f1c40f;
+    font-size: 1.25rem;
+}
+
+.travel-detail-desc {
+    font-size: 1.13rem;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+@media (max-width: 700px) {
+    .travel-detail-section {
+        border-radius: 12px;
+        max-width: 99vw;
+    }
+
+    .travel-detail-content {
+        padding: 1.2rem 0.9rem 1.2rem 0.9rem;
+    }
+
+    .travel-detail-libelle {
+        font-size: 1.35rem;
+    }
+
+    .travel-detail-image img {
+        max-height: 200px;
+        border-radius: 12px 12px 0 0;
     }
 }

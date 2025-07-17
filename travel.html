@@ -13,180 +13,269 @@
         <div class="logo">
             <!-- <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> -->
             <!-- </svg> -->
-            <span>Ark-x Agency</span>
+            <a href="index.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+                <span>Ark-x Agency</span>
+            </a>
         </div>
         <nav>
             <ul class="nav-menu" style="margin-right: 70px;">
-                <li><a href="#home-simple" class="active">Home</a></li>
-                <li><a href="#traject-section">Travel</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-                <li><a href="#info-section">About</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="index.html#contact-section">Contact</a></li>
+                <li><a href="index.html#info-section">About</a></li>
             </ul>
         </nav>
+        <div class="header-actions" style="display: flex; align-items: center; gap: 16px; margin-right: 32px;">
+            <!-- Search Button -->
+            <button id="search-btn" style="background: none; border: none; cursor: pointer;" title="Search">
+                <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+            </button>
+            <!-- User Profile Button -->
+            <button id="profile-btn" style="background: none; border: none; cursor: pointer;" title="Profile">
+                <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M6 20c0-2.2 3.6-4 6-4s6 1.8 6 4" />
+                </svg>
+            </button>
+        </div>
     </header>
     <main>
         <br>
         <br>
         <!-- Add this section where you want your Traject section to appear -->
         <section class="traject-section" id="traject-section">
-            <h2>Explore the World with Us</h2>
+            <!-- <h2>Explore the World with Us</h2>
             <p class="traject-subtitle">Your journey begins here. Discover amazing destinations and unforgettable
                 experiences.</p>
-            <br>
+            <br> -->
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <h2>Explore the World with Us</h2>
+                    <p class="traject-subtitle">
+                        Your journey begins here. Discover amazing destinations and unforgettable experiences.
+                    </p>
+                </div>
+                <!-- Make sure the SVG color is visible against background -->
+                <span title="Search" style="margin-left:24px; display: flex; align-items: center; margin-right: 50px;">
+                    <svg width="24" height="24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" viewBox="0 0 24 24">
+                        <line x1="4" y1="4" x2="20" y2="4" />
+                        <line x1="8" y1="12" x2="16" y2="12" />
+                        <line x1="10" y1="18" x2="14" y2="18" />
+                    </svg>
+                </span>
+            </div>
 
             <div class="traject-cards">
-                <div class="traject-card">
-                    <img src="./assets/destination-1.jpg" alt="NYC Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Skyline Adventure</div>
-                            <div class="traject-location">New York City, USA</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.7</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-2.jpg" alt="Santorini Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Mediterranean Dream</div>
-                            <div class="traject-location">Santorini, Greece</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.5</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-3.jpg" alt="Bali Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Island Explorer</div>
-                            <div class="traject-location">Bali, Indonesia</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.8</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-4.webp" alt="NYC Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Tropical Escape</div>
-                            <div class="traject-location">Maldives</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.7</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-5.webp" alt="Santorini Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Desert Mirage</div>
-                            <div class="traject-location">Marrakech, Morocco</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.5</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-6.webp" alt="Bali Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Urban Elegance</div>
-                            <div class="traject-location">Paris, France</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.8</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-7.jpg" alt="NYC Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Island Paradise</div>
-                            <div class="traject-location">Bali, Indonesia</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.7</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-8.webp" alt="Santorini Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Northern Lights Retreat</div>
-                            <div class="traject-location">Tromsø, Norway</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.5</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-9.jpeg" alt="Bali Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Safari Adventure</div>
-                            <div class="traject-location">Serengeti, Tanzania</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.8</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-10.jpeg" alt="NYC Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Mountain Majesty</div>
-                            <div class="traject-location">Swiss Alps, Switzerland</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.7</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-11.jpeg" alt="Santorini Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Oriental Charm</div>
-                            <div class="traject-location">Kyoto, Japan</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.5</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-12.jpeg" alt="Bali Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Caribbean Bliss</div>
-                            <div class="traject-location">Barbados</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.8</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-13.jpg" alt="NYC Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Historic Splendor</div>
-                            <div class="traject-location">Rome, Italy</div>
-                        </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.7</span>
-                    </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-14.jpeg" alt="Santorini Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Pacific Serenity</div>
-                            <div class="traject-location">Bora Bora, French Polynesia
-
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+                    <div class="traject-card">
+                        <img src="./assets/destination-1.jpg" alt="NYC Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Skyline Adventure</div>
+                                <div class="traject-location">New York City, USA</div>
                             </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.7</span>
                         </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.5</span>
                     </div>
-                </div>
-                <div class="traject-card">
-                    <img src="./assets/destination-15.jpeg" alt="Bali Traject" />
-                    <div class="traject-info">
-                        <div>
-                            <div class="traject-title">Modern Oasis</div>
-                            <div class="traject-location">Dubai, UAE</div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+                    <div class="traject-card">
+                        <img src="./assets/destination-2.jpg" alt="Santorini Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Mediterranean Dream</div>
+                                <div class="traject-location">Santorini, Greece</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.5</span>
                         </div>
-                        <span class="traject-rating"><span>&#9733;</span> 4.8</span>
+
                     </div>
-                </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+                    <div class="traject-card">
+
+                        <img src="./assets/destination-3.jpg" alt="Bali Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Island Explorer</div>
+                                <div class="traject-location">Bali, Indonesia</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.8</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+                    <div class="traject-card">
+
+
+                        <img src="./assets/destination-4.webp" alt="NYC Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Tropical Escape</div>
+                                <div class="traject-location">Maldives</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.7</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+                    <div class="traject-card">
+                        <img src="./assets/destination-5.webp" alt="Santorini Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Desert Mirage</div>
+                                <div class="traject-location">Marrakech, Morocco</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.5</span>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+                    <div class="traject-card">
+
+
+                        <img src="./assets/destination-6.webp" alt="Bali Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Urban Elegance</div>
+                                <div class="traject-location">Paris, France</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.8</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+                    <div class="traject-card">
+                        <a href="traveldetail.html" class="traject-card-link"
+                            style="text-decoration: none; color: inherit;">
+
+                            <img src="./assets/destination-7.jpg" alt="NYC Traject" />
+                            <div class="traject-info">
+                                <div>
+                                    <div class="traject-title">Island Paradise</div>
+                                    <div class="traject-location">Bali, Indonesia</div>
+                                </div>
+                                <span class="traject-rating"><span>&#9733;</span> 4.7</span>
+                            </div>
+
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+
+                    <div class="traject-card">
+
+                        <img src="./assets/destination-8.webp" alt="Santorini Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Northern Lights Retreat</div>
+                                <div class="traject-location">Tromsø, Norway</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.5</span>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+                    <div class="traject-card">
+
+                        <img src="./assets/destination-9.jpeg" alt="Bali Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Safari Adventure</div>
+                                <div class="traject-location">Serengeti, Tanzania</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.8</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+
+                    <div class="traject-card">
+                        <img src="./assets/destination-10.jpeg" alt="NYC Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Mountain Majesty</div>
+                                <div class="traject-location">Swiss Alps, Switzerland</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.7</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+
+                    <div class="traject-card">
+                        <img src="./assets/destination-11.jpeg" alt="Santorini Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Oriental Charm</div>
+                                <div class="traject-location">Kyoto, Japan</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.5</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+
+                    <div class="traject-card">
+                        <img src="./assets/destination-12.jpeg" alt="Bali Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Caribbean Bliss</div>
+                                <div class="traject-location">Barbados</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.8</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+
+                    <div class="traject-card">
+                        <img src="./assets/destination-13.jpg" alt="NYC Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Historic Splendor</div>
+                                <div class="traject-location">Rome, Italy</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.7</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+
+                    <div class="traject-card">
+                        <img src="./assets/destination-14.jpeg" alt="Santorini Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Pacific Serenity</div>
+                                <div class="traject-location">Bora Bora, French Polynesia
+
+                                </div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.5</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="traveldetail.html" class="traject-card-link" style="text-decoration: none; color: inherit;">
+
+                    <div class="traject-card">
+                        <img src="./assets/destination-15.jpeg" alt="Bali Traject" />
+                        <div class="traject-info">
+                            <div>
+                                <div class="traject-title">Modern Oasis</div>
+                                <div class="traject-location">Dubai, UAE</div>
+                            </div>
+                            <span class="traject-rating"><span>&#9733;</span> 4.8</span>
+                        </div>
+                    </div>
+                </a>
             </div>
             <button class="discover-btn">Load More</button>
         </section>
@@ -197,7 +286,7 @@
         <section class="info-section" id="info-section">
             <div class="info-container">
                 <div class="info-col">
-                    <h3>Alk-x Agency</h3>
+                    <h3>Ark-x Agency</h3>
                     <p>
                         Explore the world with ease and excitement through our comprehensive travel platform. Your
                         journey begins here, where seamless planning meets unforgettable experiences.
