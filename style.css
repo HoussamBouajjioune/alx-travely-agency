@@ -24,10 +24,36 @@ header {
     padding: 0.7rem 2rem;
 }
 
+/* .logo {
+    display: flex;
+    align-items: start;
+} */
+
 .logo {
     display: flex;
     align-items: center;
+    gap: 0.6rem; /* space between SVG and text */
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff; /* assuming header background is blue */
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
+.logo svg {
+    width: 32px;
+    height: 32px;
+    background: #fff; /* white circle for contrast */
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo span {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+}
+
 
 nav {
     flex: 1;
@@ -630,5 +656,71 @@ footer {
     .info-col {
         width: 100%;
         margin-bottom: 1.5rem;
+    }
+}
+
+
+/* --- Stats Section --- */
+.stats-section {
+    width: 100%;
+    margin: 3rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.stats-container {
+    display: flex;
+    gap: 2.2rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #f6f8fa;
+    border-radius: 32px;
+    box-shadow: 0 2px 22px rgba(52, 152, 219, 0.10);
+    flex: 1 1 220px;
+    min-width: 260px;
+    max-width: 330px;
+    padding: 2.2rem 0;
+    margin: 0.5rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.18s, transform 0.18s;
+}
+
+.stat-card:hover {
+    box-shadow: 0 4px 32px rgba(52, 152, 219, 0.14);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.stat-value {
+    font-size: 2.7rem;
+    color: #2976f6;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.stat-label {
+    font-size: 1.12rem;
+    color: #7a858d;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .stat-card {
+        width: 90vw;
+        min-width: 200px;
+        max-width: 98vw;
     }
 }
